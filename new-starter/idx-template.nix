@@ -4,7 +4,7 @@
   ];
   bootstrap = ''
     mkdir -p "$WS_NAME"
-    cp -rf ${./app} "$WS_NAME"
+    cp -rf ${./app/**} "$WS_NAME"
     mkdir -p "$WS_NAME/.idx/"
     cp -rf ${./dev.nix} "$WS_NAME/.idx/dev.nix"
     cp -rf ${./astronaut.png} "$WS_NAME/.idx/icon.png"
