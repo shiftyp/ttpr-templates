@@ -1,5 +1,7 @@
 { pkgs, ... }: {
-  packages = [];
+  packages = [
+    pkgs.nodejs_20
+  ];
   bootstrap = ''
     mkdir -p "$WS_NAME"
     cp -rf ${./app} "$WS_NAME"
