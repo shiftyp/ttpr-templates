@@ -1,0 +1,13 @@
+{
+    "private": "true",
+    "scripts": {
+        "deploy:frontend": "fly deploy --config ./apps/frontend/fly.toml --dockerfile ./apps/frontend/Dockerfile"
+    },
+    "workspaces": {
+        "packages": [
+            "./apps/frontend",
+            "./apps/auth",
+            "./packages/components"
+        ]
+    }
+}
